@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la Página</title>
+
+
+
+</head>
+<body>
+    <p>Django</p>
+    <p>Hemos entrado</p>
+
+    {% for post in posts_mostrar %}
+        <article>
+            <time>published: {{post.published_date}}</time>
+            <h2><a href="">{{post.title}} </a></h2>
+            <p>{{post.text|linebreaksbr}}</p>
+        </article>
+    {%  endfor %}
+</body>
+</html>
