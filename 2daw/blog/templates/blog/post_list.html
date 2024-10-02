@@ -12,9 +12,14 @@
     <p>Django</p>
     <p>Hemos entrado</p>
 
+    <!--
+    Hacemos un for, para recorrer todos los posts que provienen de la vista
+
+    -->
     {% for post in posts_mostrar %}
         <article>
-            <time>published: {{post.published_date}}</time>
+            <!--Mostramos información de dicho atributo del objeto Post.-->
+            <time>published: {{post.published_date}}</time> 
             <h2><a href="">{{post.title}} </a></h2>
             <p>{{post.text|linebreaksbr}}</p>
         </article>
