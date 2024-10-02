@@ -1,0 +1,10 @@
+#no se sube
+.env
+myvenv/
+venv/
+
+#
+myvenv
+
+# Database
+db.sqlite3

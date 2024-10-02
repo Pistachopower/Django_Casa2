@@ -1,0 +1,2 @@
+#version de Django 
+Django~=5.1.1
